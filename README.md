@@ -1,0 +1,5 @@
+![Simulator Screenshot - iPhone 15 Pro - 2024-01-30 at 17 16 05](https://github.com/jcgomez14/ProjectCountryManages/assets/91702811/914d0db4-a6d3-4047-a160-8522de503903)
+![Simulator Screenshot - iPhone 15 Pro - 2024-01-30 at 17 16 24](https://github.com/jcgomez14/ProjectCountryManages/assets/91702811/6f15f925-3a5d-475f-83ed-8eab202d0d65)
+![Simulator Screenshot - iPhone 15 Pro - 2024-01-30 at 17 16 28](https://github.com/jcgomez14/ProjectCountryManages/assets/91702811/3833a078-c4c8-4416-886c-a71664ec5aeb)
+![Simulator Screenshot - iPhone 15 Pro - 2024-01-30 at 17 16 41](https://github.com/jcgomez14/ProjectCountryManages/assets/91702811/43a7b268-f2ef-4fa4-917b-2ebb1d599c6c)
+![Simulator Screenshot - iPhone 15 Pro - 2024-01-30 at 17 16 46](https://github.com/jcgomez14/ProjectCountryManages/assets/91702811/1b3af371-9550-4f1e-bc3f-88e2c8d52152)
