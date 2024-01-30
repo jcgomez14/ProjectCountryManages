@@ -1,0 +1,55 @@
+[
+    {
+        "CuentaId": "201",
+        "Id": "22185",
+        "Nombre": "Martin",
+        "Apellido": "Rodriguez",
+        "DNI": "18430111",
+        "Email": "mrodriguez@gmail.com",
+        "Telefono": "01115338174",
+        "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
+        "Codigo": "C14",
+        "Admin": true,
+        "NombreEntry": "Franco",
+        "ApellidoEntry": "Cazala",
+        "DateEntry": "15/2/2024 15:00",
+        "DNIEntry": "33454985",
+        "Auth": 0
+    },
+    
+    {
+        "CuentaId": "201",
+        "Id": "22185",
+        "Nombre": "Martin",
+        "Apellido": "Rodriguez",
+        "DNI": "18430111",
+        "Email": "mrodriguez@gmail.com",
+        "Telefono": "01115338174",
+        "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
+        "Codigo": "C14",
+        "Admin": true,
+        "NombreEntry": "Maximiliano",
+        "ApellidoEntry": "Fernandez",
+        "DateEntry": "26/11/2023 12:50",
+        "DNIEntry": "4302345",
+        "Auth": 1
+    },
+    
+    {
+        "CuentaId": "201",
+        "Id": "22185",
+        "Nombre": "Martin",
+        "Apellido": "Rodriguez",
+        "DNI": "18430111",
+        "Email": "mrodriguez@gmail.com",
+        "Telefono": "01115338174",
+        "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
+        "Codigo": "C14",
+        "Admin": true,
+        "NombreEntry": "Gimena",
+        "ApellidoEntry": "Ruiz",
+        "DateEntry": "23/11/2023 9:30",
+        "DNIEntry": "2204385",
+        "Auth": 2
+    },
+]

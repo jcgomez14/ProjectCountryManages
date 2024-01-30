@@ -1,0 +1,12 @@
+{
+    "CuentaId": "201",
+    "Id": "22185",
+    "Nombre": "Martin",
+    "Apellido": "Rodriguez",
+    "DNI": "18430111",
+    "Email": "mrodriguez@gmail.com",
+    "Telefono": "01115338174",
+    "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
+    "Codigo": "C14",
+    "Admin": true,
+}
