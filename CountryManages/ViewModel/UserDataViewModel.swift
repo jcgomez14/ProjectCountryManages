@@ -2,11 +2,18 @@ import Foundation
 
 class UserDataViewModel: ObservableObject {
     @Published var authRequest: [AuthModel] = []
-    @Published var userData: UserModel?
+    @Published var userDataMock: UserModel?
     @Published var groupData: [GroupModel] = []
+    @Published var userData: UserDefautlModel?
+
     
     init() {
-      fetchUserData()
+    //  fetchUserData()
+        fetchDataUserDefaults()
+    }
+    
+    func clearAccount() {
+        userData =  UserDefautlModel.init(Nombre: "", Apellido: "", DNI: "", Email: "", Telefono: "", Codigo: "", Admin: false)
     }
     
     func fetchAuthRequest() {
@@ -27,7 +34,7 @@ class UserDataViewModel: ObservableObject {
         }
     }
     
-    
+    // Mock
     func fetchUserData() {
         guard let url = Bundle.main.url(forResource: "UserMock", withExtension: "json")
         else {
@@ -38,13 +45,26 @@ class UserDataViewModel: ObservableObject {
             let jsonDecoder = JSONDecoder()
             let userData = try jsonDecoder.decode(UserModel.self, from: data)
             
-            self.userData = userData
+            self.userDataMock = userData
             print("User Data", userData)
             
         } catch {
             print(error)
         }
     }
+    
+    
+    // Fetch Data whit UserDefaults
+    func fetchDataUserDefaults()  {
+        
+        guard let nombre =  UserDefaults.standard.string(forKey: "userNombre") else { return }
+        guard let dni =  UserDefaults.standard.string(forKey: "userIdentificacion") else { return }
+        guard let email =  UserDefaults.standard.string(forKey: "userEmail") else { return }
+        guard let telefono =  UserDefaults.standard.string(forKey: "userEmail") else { return }
+        
+        userData =  UserDefautlModel.init(Nombre: nombre, Apellido: "", DNI: dni, Email: email, Telefono: telefono, Codigo: "C14", Admin: true)
+    }
+    
     
     func fetchUserGroup() {
         guard let url = Bundle.main.url(forResource: "GroupMock", withExtension: "json")

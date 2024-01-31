@@ -1,71 +1,63 @@
 import SwiftUI
 
 struct InitView: View {
+    
+    @EnvironmentObject var userData: UserDataViewModel
+    
     var body: some View {
-        NavigationStack {
+        TabView {
+            NavigationView {
+                HomeView()
+                    .navigationBarItems(
+                        leading: leadingNavigationBar(),
+                        trailing: trailingNavigationBar()
+                    )
+            }
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("Inicio")
+            }
 
-        
-            // MARK: TAB BAR
-            TabView {
-                // Vista de la primera pestaña
-                NavigationView {
-                    HomeView()
-                }.tabItem {
-                        Image(systemName: "house.fill")
-                        Text("Inicio")
-                    }
-                
-                // Vista de la segunda pestaña
-                NavigationView {
-                    GroupView()
-                }.tabItem {
-                        Image(systemName: "person.2.fill")
-                        Text("Grupo")
-                    }
+            NavigationView {
+                GroupView()
+                    .navigationBarItems(
+                        leading: leadingNavigationBar(),
+                        trailing: trailingNavigationBar()
+                    )
+            }
+            .tabItem {
+                Image(systemName: "person.2.fill")
+                Text("Grupo")
+            }
 
-                // Vista de la segunda pestaña
-                NavigationView{
-                    AlertsView()
-                    
-                }.tabItem {
-                        Image(systemName: "megaphone.fill")
-                        Text("Alertas")
-                    }
-                
-                
-                // Vista de la segunda pestaña
+            NavigationView {
+                AlertsView()
+                    .navigationBarItems(
+                        leading: leadingNavigationBar(),
+                        trailing: trailingNavigationBar()
+                    )
+            }
+            .tabItem {
+                Image(systemName: "megaphone.fill")
+                Text("Alertas")
+            }
+
+            NavigationView {
                 Text("Comunidad")
-                    .tabItem {
-                        Image(systemName: "map.fill")
-                        Text("Comunidad")
-                    }
-            }.accentColor(Color.accent)
-            
-            
-            
-            // MARK: Navigation Components
-            .navigationBarTitleDisplayMode(.inline)
-            
-            .navigationBarItems(leading:
-                                    Image("logo")
-                .resizable()
-                .scaledToFill()
-                .foregroundColor(Color.accent)
-                .frame(width: 50, height: 50)
-                                , trailing:
-                                    NavigationLink(destination: ProfileView()) {
-                Image(systemName: "person")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(Color.white)
-                    .padding(10)
-                    .background(Color.accent)
-                    .cornerRadius(50)
-            })
-            
+                    .navigationBarItems(
+                        leading: leadingNavigationBar(),
+                        trailing: trailingNavigationBar()
+                    )
+            }
+            .tabItem {
+                Image(systemName: "map.fill")
+                Text("Comunidad")
+            }
         }
-        
+        .accentColor(Color.accent)
+        .onAppear() {
+            userData.fetchDataUserDefaults()
+        }
     }
 }
 
@@ -74,6 +66,33 @@ struct InitView_Previews: PreviewProvider {
         InitView()
     }
 }
+
+
+
+extension InitView {
+   
+    func leadingNavigationBar() -> some View {
+        return  Image("logo")
+            .resizable()
+            .scaledToFill()
+            .foregroundColor(Color.accent)
+            .frame(width: 50, height: 50)
+    }
+    
+    func trailingNavigationBar() -> some View {
+        return NavigationLink(destination: ProfileView()) {
+            Image(systemName: "person")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 20, height: 20)
+                .foregroundColor(Color.white)
+                .padding(10)
+                .background(Color.accent)
+                .cornerRadius(50)
+        }
+    }
+}
+
 
 struct SegundaPantalla: View {
     var body: some View {

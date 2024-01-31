@@ -17,7 +17,6 @@ struct RequestEntryView: View {
     @EnvironmentObject var appState: AppState
     @Environment (\.presentationMode) var presentationMode
     var body: some View {
-        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                    Text("Completa los campos para solicitar un ingreso")
@@ -96,12 +95,13 @@ struct RequestEntryView: View {
             }.task {
                 uiImage =  AppUtils.shared.generateQR(from: "\(nombre)\n\(identificacion)\n\(patente)\n\(selectedDate)\n\(selectedTime)")
             })
-        }.onReceive(appState.$moveToDashboard) { moveToDashboard in
+        .onReceive(appState.$moveToDashboard) { moveToDashboard in
             if moveToDashboard {
                 presentationMode.wrappedValue.dismiss()
                 self.appState.moveToDashboard = false
             }
         }
+       
     }
 }
 

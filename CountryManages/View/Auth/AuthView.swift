@@ -5,7 +5,6 @@ struct AuthView: View {
     @EnvironmentObject var auth: UserDataViewModel
 
     var body: some View {
-        NavigationStack {
             List {
                 ForEach(auth.authRequest, id: \.NombreEntry) { i in
                     NavigationLink(destination: AcceptAuthView(auth: i)) {
@@ -28,9 +27,10 @@ struct AuthView: View {
             .navigationTitle("Autorizacion Ingreso")
             .navigationBarTitleDisplayMode(.inline)
             
-        }.onAppear() {
+        .onAppear() {
             auth.fetchAuthRequest()
         }
+        
     }
 }
 
