@@ -9,8 +9,24 @@ Email
 Numero telefono.
 Password.
 
+
+1- Idioma. 
+2- Form: Nombre Apellido / DNI / Telefono / Email / ReplyEmail / Password / CREATE. 
+3-INIT
+
+
+
+
+
+
 LOGIN: Seguridad
 Otorga el codigo de propetario.
+
+
+
+
+
+
 
 
 

@@ -12,3 +12,19 @@ struct UserModel: Codable {
     var Codigo: String
     var Admin: Bool
 }
+
+
+
+
+
+
+
+struct UserDefautlModel: Codable {
+    var Nombre: String
+    var Apellido: String
+    var DNI: String
+    var Email: String
+    var Telefono: String
+    var Codigo: String
+    var Admin: Bool
+}

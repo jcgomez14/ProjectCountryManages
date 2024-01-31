@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var loginService: LoginService
+    @EnvironmentObject var userData: UserDataViewModel
     var body: some View {
-        NavigationStack {
             List {
                 HStack {
                     Image(systemName: "person")
@@ -23,13 +24,23 @@ struct ProfileView: View {
                     Image(systemName: "person")
                     Text("Configuracion")
                 }
+                    Button(action: {
+                        loginService.logoutAccount()
+                        userData.clearAccount()
+                    }, label: {
+                        HStack {
+                            Image(systemName: "x.circle")
+                            Text("Cerrar Sesion")
+                        }
+                    })
             }
             .navigationTitle("Perfil")
             .navigationBarTitleDisplayMode(.inline)
-        }
     }
 }
 
 #Preview {
     ProfileView()
+        .environmentObject(LoginService())
+        .environmentObject(UserDataViewModel())
 }

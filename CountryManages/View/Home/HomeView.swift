@@ -5,7 +5,7 @@ struct HomeView: View {
     @EnvironmentObject var userData: UserDataViewModel
     
     var body: some View {
-        NavigationStack {
+        VStack {
             VStack(alignment: .leading) {
                 Text("Hola \(userData.userData?.Nombre ?? "")")
                     .font(.title)
@@ -82,5 +82,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(UserDataViewModel())
     }
 }

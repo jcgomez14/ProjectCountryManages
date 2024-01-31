@@ -11,7 +11,6 @@ struct ReserveSpaceListView: View {
     ]
     
     var body: some View {
-        NavigationStack {
             List(spaces, id: \.self) { i in
                 NavigationLink(destination: ReserveView(spaces: i)) {
                     HStack {
@@ -25,7 +24,7 @@ struct ReserveSpaceListView: View {
             }
             .navigationTitle("Espacios")
             .navigationBarTitleDisplayMode(.inline)
-        }
+   
     }
 }
 
