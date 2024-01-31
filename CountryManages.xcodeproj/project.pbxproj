@@ -95,7 +95,8 @@
 				B52963DC2B67E612007D15F0 /* ReserveSpaceListView.swift */,
 				B52963E32B67ED39007D15F0 /* ReserveView.swift */,
 			);
-			path = ReserveSpace;
+			name = ReserveSpace;
+			path = ../ReserveSpace;
 			sourceTree = "<group>";
 		};
 		B545FBFD2B6932DD00F226D9 /* Group */ = {
@@ -178,10 +179,7 @@
 			children = (
 				B545FC002B69414400F226D9 /* Alerts */,
 				B545FBFD2B6932DD00F226D9 /* Group */,
-				B52963DB2B67E5EE007D15F0 /* ReserveSpace */,
-				B5D404F22B64103F007EBD9E /* Auth */,
 				B55CC29D2B63D5BB00AFD077 /* Profile */,
-				B54BB8992B62F81200391E5C /* RequestEntry */,
 				B54BB8962B62ED5700391E5C /* Home */,
 				B54BB88F2B62E23400391E5C /* Init */,
 				B54BB88E2B62E22A00391E5C /* Login */,
@@ -250,6 +248,9 @@
 		B54BB8962B62ED5700391E5C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B52963DB2B67E5EE007D15F0 /* ReserveSpace */,
+				B5D404F22B64103F007EBD9E /* Auth */,
+				B54BB8992B62F81200391E5C /* RequestEntry */,
 				B54BB8972B62ED6000391E5C /* HomeView.swift */,
 			);
 			path = Home;
@@ -261,7 +262,8 @@
 				B55CC2A02B63DD8000AFD077 /* ConfirmationRequest */,
 				B54BB89A2B62F84600391E5C /* RequestEntryView.swift */,
 			);
-			path = RequestEntry;
+			name = RequestEntry;
+			path = ../RequestEntry;
 			sourceTree = "<group>";
 		};
 		B55CC29D2B63D5BB00AFD077 /* Profile */ = {
@@ -286,7 +288,8 @@
 				B5D404F92B643536007EBD9E /* AcceptAuth */,
 				B5D404F32B641051007EBD9E /* AuthView.swift */,
 			);
-			path = Auth;
+			name = Auth;
+			path = ../Auth;
 			sourceTree = "<group>";
 		};
 		B5D404F92B643536007EBD9E /* AcceptAuth */ = {
