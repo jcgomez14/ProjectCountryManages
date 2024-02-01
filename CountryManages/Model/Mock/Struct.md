@@ -25,17 +25,6 @@ Otorga el codigo de propetario.
 
 
 
-
-
-
-
-
-BARRIO ADMINISTRACION:
-<!--Solicitud de ingresos -> usuario -> seguridad. Generacion QR -> Entrada       -->
-<!--    - generar qr-->
-<!--    - compartir qr-->
-<!---->
-
 Solicitud de ingresos -> Seguridad -> usuario. Requiere aprobacion.
     - estado de aceptacion
 

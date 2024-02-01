@@ -11,4 +11,5 @@ struct GroupModel: Codable, Hashable {
     var Imei: String
     var Codigo: String
     var Admin: Bool
+    var Image: String
 }

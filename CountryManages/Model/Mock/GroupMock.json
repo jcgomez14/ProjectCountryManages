@@ -10,6 +10,7 @@
         "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
         "Codigo": "C14",
         "Admin": true,
+        "Image": "male-junior",
     },
     {
         "CuentaId": "202",
@@ -22,6 +23,7 @@
         "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
         "Codigo": "C14",
         "Admin": true,
+        "Image": "female-senior",
     },
     {
         "CuentaId": "203",
@@ -34,6 +36,7 @@
         "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
         "Codigo": "C14",
         "Admin": false,
+        "Image": "female-junior",
     },
     {
         "CuentaId": "204",
@@ -46,5 +49,6 @@
         "Imei": "7e038625a1ae52b42113fa1f45ebfec87f93556f",
         "Codigo": "C14",
         "Admin": false,
+        "Image": "male-junior",
     }
 ]

@@ -4,15 +4,17 @@ struct ButtonsAlertsView: View {
     
     var alert: AlertsModel
     
+    @State var isComunity: Bool = false
+    
     var body: some View {
         VStack {
-            NavigationLink(destination: SegundaPantalla()) {
+            NavigationLink(destination: isComunity ? AnyView(SendAlertView(alert: alert)) : AnyView(SendComunityView(alert: alert))) {
                 VStack {
                     Image(systemName: alert.image)
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(Color.white)
-                        .frame(width: 60, height: 60)
+                        .frame(width: 40, height: 40)
                         .padding(20)
                         .background(alert.color)
                         .cornerRadius(50)

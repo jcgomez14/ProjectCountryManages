@@ -43,7 +43,7 @@ struct InitView: View {
             }
 
             NavigationView {
-                Text("Comunidad")
+                ComunityView()
                     .navigationBarItems(
                         leading: leadingNavigationBar(),
                         trailing: trailingNavigationBar()

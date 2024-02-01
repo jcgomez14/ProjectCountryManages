@@ -35,6 +35,12 @@
 		B590E7D72B6A91CA00F9DC61 /* InitLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590E7D62B6A91CA00F9DC61 /* InitLoginView.swift */; };
 		B590E7D92B6A949000F9DC61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590E7D82B6A949000F9DC61 /* LoginView.swift */; };
 		B590E7DB2B6A9C3200F9DC61 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590E7DA2B6A9C3200F9DC61 /* LoginService.swift */; };
+		B590E7DD2B6AD51800F9DC61 /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590E7DC2B6AD51800F9DC61 /* CardGroupView.swift */; };
+		B599A6792B6BC6E1000A4E3F /* CardActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599A6782B6BC6E1000A4E3F /* CardActivity.swift */; };
+		B599A67C2B6BD3D8000A4E3F /* SendAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599A67B2B6BD3D8000A4E3F /* SendAlertView.swift */; };
+		B5C17FC82B6BEEE8009843E3 /* LocationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C17FC72B6BEEE8009843E3 /* LocationUser.swift */; };
+		B5C17FCB2B6BFD01009843E3 /* ComunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C17FCA2B6BFD01009843E3 /* ComunityView.swift */; };
+		B5C17FCD2B6C1B70009843E3 /* SendComunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C17FCC2B6C1B70009843E3 /* SendComunityView.swift */; };
 		B5D404F42B641051007EBD9E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404F32B641051007EBD9E /* AuthView.swift */; };
 		B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */; };
 		B5D404F82B6410A7007EBD9E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404F72B6410A7007EBD9E /* AuthModel.swift */; };
@@ -72,6 +78,12 @@
 		B590E7D62B6A91CA00F9DC61 /* InitLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitLoginView.swift; sourceTree = "<group>"; };
 		B590E7D82B6A949000F9DC61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B590E7DA2B6A9C3200F9DC61 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		B590E7DC2B6AD51800F9DC61 /* CardGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupView.swift; sourceTree = "<group>"; };
+		B599A6782B6BC6E1000A4E3F /* CardActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardActivity.swift; sourceTree = "<group>"; };
+		B599A67B2B6BD3D8000A4E3F /* SendAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAlertView.swift; sourceTree = "<group>"; };
+		B5C17FC72B6BEEE8009843E3 /* LocationUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUser.swift; sourceTree = "<group>"; };
+		B5C17FCA2B6BFD01009843E3 /* ComunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityView.swift; sourceTree = "<group>"; };
+		B5C17FCC2B6C1B70009843E3 /* SendComunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendComunityView.swift; sourceTree = "<group>"; };
 		B5D404F32B641051007EBD9E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
 		B5D404F72B6410A7007EBD9E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
@@ -103,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				B545FBFE2B6932E900F226D9 /* GroupView.swift */,
+				B590E7DC2B6AD51800F9DC61 /* CardGroupView.swift */,
+				B599A6782B6BC6E1000A4E3F /* CardActivity.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -110,6 +124,7 @@
 		B545FC002B69414400F226D9 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				B599A67A2B6BD3CA000A4E3F /* SendAlert */,
 				B545FC032B694E4800F226D9 /* Buttons */,
 				B545FC012B69416C00F226D9 /* AlertsView.swift */,
 			);
@@ -170,6 +185,7 @@
 				B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */,
 				B545FC082B695FA500F226D9 /* ConfigManager.swift */,
 				B590E7DA2B6A9C3200F9DC61 /* LoginService.swift */,
+				B5C17FC72B6BEEE8009843E3 /* LocationUser.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +193,7 @@
 		B54BB8842B62E16700391E5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5C17FC92B6BFCE8009843E3 /* Comunity */,
 				B545FC002B69414400F226D9 /* Alerts */,
 				B545FBFD2B6932DD00F226D9 /* Group */,
 				B55CC29D2B63D5BB00AFD077 /* Profile */,
@@ -282,6 +299,23 @@
 			path = ConfirmationRequest;
 			sourceTree = "<group>";
 		};
+		B599A67A2B6BD3CA000A4E3F /* SendAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B599A67B2B6BD3D8000A4E3F /* SendAlertView.swift */,
+			);
+			path = SendAlert;
+			sourceTree = "<group>";
+		};
+		B5C17FC92B6BFCE8009843E3 /* Comunity */ = {
+			isa = PBXGroup;
+			children = (
+				B5C17FCA2B6BFD01009843E3 /* ComunityView.swift */,
+				B5C17FCC2B6C1B70009843E3 /* SendComunityView.swift */,
+			);
+			path = Comunity;
+			sourceTree = "<group>";
+		};
 		B5D404F22B64103F007EBD9E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C17FCB2B6BFD01009843E3 /* ComunityView.swift in Sources */,
 				B545FC092B695FA500F226D9 /* ConfigManager.swift in Sources */,
 				B54BB8912B62E24900391E5C /* InitView.swift in Sources */,
+				B599A67C2B6BD3D8000A4E3F /* SendAlertView.swift in Sources */,
 				B545FC022B69416C00F226D9 /* AlertsView.swift in Sources */,
 				B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */,
 				B590E7DB2B6A9C3200F9DC61 /* LoginService.swift in Sources */,
@@ -382,10 +418,12 @@
 				B545FC072B695CC500F226D9 /* AlertsModel.swift in Sources */,
 				B590E7D52B6A7E4400F9DC61 /* RegisterView.swift in Sources */,
 				B52963E42B67ED39007D15F0 /* ReserveView.swift in Sources */,
+				B5C17FC82B6BEEE8009843E3 /* LocationUser.swift in Sources */,
 				B54BB8782B62E13F00391E5C /* ContentView.swift in Sources */,
 				B55CC2A42B63E84500AFD077 /* AppState.swift in Sources */,
 				B590E7D92B6A949000F9DC61 /* LoginView.swift in Sources */,
 				B5D404F82B6410A7007EBD9E /* AuthModel.swift in Sources */,
+				B5C17FCD2B6C1B70009843E3 /* SendComunityView.swift in Sources */,
 				B511C5992B68203500508DDE /* AppUtils.swift in Sources */,
 				B54BB89B2B62F84600391E5C /* RequestEntryView.swift in Sources */,
 				B55CC29F2B63D5DD00AFD077 /* ProfileView.swift in Sources */,
@@ -394,9 +432,11 @@
 				B5D404F42B641051007EBD9E /* AuthView.swift in Sources */,
 				B55CC2A22B63DD9A00AFD077 /* ConfirmationRequestView.swift in Sources */,
 				B54BB8982B62ED6000391E5C /* HomeView.swift in Sources */,
+				B599A6792B6BC6E1000A4E3F /* CardActivity.swift in Sources */,
 				B5D404FB2B643551007EBD9E /* AcceptAuthView.swift in Sources */,
 				B52963DD2B67E612007D15F0 /* ReserveSpaceListView.swift in Sources */,
 				B545FBFF2B6932E900F226D9 /* GroupView.swift in Sources */,
+				B590E7DD2B6AD51800F9DC61 /* CardGroupView.swift in Sources */,
 				B545FC052B694E5F00F226D9 /* ButtonsAlertsView.swift in Sources */,
 				B54BB8762B62E13F00391E5C /* CountryManagesApp.swift in Sources */,
 				B590E7D72B6A91CA00F9DC61 /* InitLoginView.swift in Sources */,
@@ -531,6 +571,9 @@
 				DEVELOPMENT_TEAM = 7GDT6SSAL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -560,6 +603,9 @@
 				DEVELOPMENT_TEAM = 7GDT6SSAL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

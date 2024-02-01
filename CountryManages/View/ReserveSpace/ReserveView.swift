@@ -10,7 +10,6 @@ struct ReserveView: View {
     @Environment (\.presentationMode) var presentationMode
     
     var body: some View {
-        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                    
@@ -91,7 +90,6 @@ struct ReserveView: View {
             })
         }
     }
-}
 
 #Preview {
     ReserveView(spaces: ["title": "Tenis", "image":"tennis.racket"])
