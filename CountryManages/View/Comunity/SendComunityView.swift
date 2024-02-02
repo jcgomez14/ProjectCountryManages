@@ -143,11 +143,11 @@ struct SendComunityView: View {
             
         }.padding()
         Spacer()
-        .navigationTitle("Solicitud Ingreso")
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
                                 NavigationLink(destination: SegundaPantalla()){
-            Text("Solicitar")
+            Text("Publicar")
                 .font(.system(size: 15))
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)

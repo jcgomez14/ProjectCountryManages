@@ -19,9 +19,8 @@ struct ButtonsAlertsView: View {
                         .background(alert.color)
                         .cornerRadius(50)
                     Text(alert.title)
-                        .font(.system(size: 15))
+                        .font(.system(size: 13))
                         .foregroundColor(Color.primary)
-                        .fontWeight(.bold)
                 }
             }
         }

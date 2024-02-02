@@ -212,18 +212,18 @@ struct SendAlertView: View {
                             .padding(.bottom, 40)
                     }
                 }
-                        
+              
                 .navigationBarHidden(true)
                 .toolbar(hiddenTab ? .hidden : .visible, for: .tabBar)
             
         }.sheet(isPresented: $showGalery) {
             ImagePickerView(imagenSeleccionada: $imagenSeleccionada)
-                .toolbar(.visible, for: .tabBar)
+                .toolbar(showGalery ? .visible : .hidden , for: .tabBar)
         }.toolbar(.visible, for: .tabBar)
         .sheet(isPresented: $showCamera) {
             CameraPickerView(mediaType: $mediaType, mediaData: $mediaData)
              
-        }.toolbar(.visible, for: .tabBar)
+        }.toolbar(showCamera ? .visible : .hidden, for: .tabBar)
         
         
     }
