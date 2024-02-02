@@ -15,7 +15,7 @@ class LocationViewModel: NSObject, ObservableObject {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = 100.0
         locationManager.requestAlwaysAuthorization()
-   //     locationManager.startUpdatingLocation()
+        locationManager.startUpdatingLocation()
         locationManager.delegate = self
     }
 }

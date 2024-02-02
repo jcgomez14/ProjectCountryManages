@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50EB0CF2B6D2AC1002DA033 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50EB0CE2B6D2AC1002DA033 /* ImagePicker.swift */; };
 		B511C5992B68203500508DDE /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511C5982B68203500508DDE /* AppUtils.swift */; };
 		B52963DD2B67E612007D15F0 /* ReserveSpaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52963DC2B67E612007D15F0 /* ReserveSpaceListView.swift */; };
 		B52963E42B67ED39007D15F0 /* ReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52963E32B67ED39007D15F0 /* ReserveView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50EB0CE2B6D2AC1002DA033 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B511C5982B68203500508DDE /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		B52963DC2B67E612007D15F0 /* ReserveSpaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveSpaceListView.swift; sourceTree = "<group>"; };
 		B52963E32B67ED39007D15F0 /* ReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveView.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			children = (
 				B511C5982B68203500508DDE /* AppUtils.swift */,
 				B54BB8932B62E37900391E5C /* Extension */,
+				B50EB0CE2B6D2AC1002DA033 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				B5C17FCB2B6BFD01009843E3 /* ComunityView.swift in Sources */,
 				B545FC092B695FA500F226D9 /* ConfigManager.swift in Sources */,
 				B54BB8912B62E24900391E5C /* InitView.swift in Sources */,
+				B50EB0CF2B6D2AC1002DA033 /* ImagePicker.swift in Sources */,
 				B599A67C2B6BD3D8000A4E3F /* SendAlertView.swift in Sources */,
 				B545FC022B69416C00F226D9 /* AlertsView.swift in Sources */,
 				B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */,
@@ -571,9 +575,12 @@
 				DEVELOPMENT_TEAM = 7GDT6SSAL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se requiere acceso a la camara";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Se requiere acceso al microfono";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Se requiere acceso a la galeria";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -603,9 +610,12 @@
 				DEVELOPMENT_TEAM = 7GDT6SSAL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se requiere acceso a la camara";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Se requiere autorizacion para acceder a la posicion.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Se requiere acceso al microfono";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Se requiere acceso a la galeria";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
