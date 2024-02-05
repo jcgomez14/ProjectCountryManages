@@ -50,6 +50,9 @@
 		B5DDEDA82B71058700241FF6 /* GroupEventMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DDEDA72B71058700241FF6 /* GroupEventMock.json */; };
 		B5DDEDAA2B710BA800241FF6 /* GroupEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */; };
 		B5DDEDAC2B71113B00241FF6 /* ComunityEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */; };
+		B5DDEDAE2B7120EB00241FF6 /* CardAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDAD2B7120EB00241FF6 /* CardAlerts.swift */; };
+		B5DDEDB02B7130D100241FF6 /* AlertsEventMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */; };
+		B5DDEDB42B71359A00241FF6 /* AlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,9 @@
 		B5DDEDA72B71058700241FF6 /* GroupEventMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GroupEventMock.json; sourceTree = "<group>"; };
 		B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventModel.swift; sourceTree = "<group>"; };
 		B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityEventModel.swift; sourceTree = "<group>"; };
+		B5DDEDAD2B7120EB00241FF6 /* CardAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAlerts.swift; sourceTree = "<group>"; };
+		B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlertsEventMock.json; sourceTree = "<group>"; };
+		B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 				B545FBFE2B6932E900F226D9 /* GroupView.swift */,
 				B590E7DC2B6AD51800F9DC61 /* CardGroupView.swift */,
 				B599A6782B6BC6E1000A4E3F /* CardActivity.swift */,
+				B5DDEDAD2B7120EB00241FF6 /* CardAlerts.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 				B55CC2A32B63E84500AFD077 /* AppState.swift */,
 				B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */,
 				B545FC082B695FA500F226D9 /* ConfigManager.swift */,
+				B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */,
 				B590E7DA2B6A9C3200F9DC61 /* LoginService.swift */,
 				B5C17FC72B6BEEE8009843E3 /* LocationUser.swift */,
 			);
@@ -237,6 +245,7 @@
 				B55CC2A52B63F30D00AFD077 /* AuthMock.json */,
 				B5DDEDA52B71054600241FF6 /* ComunityEventMock.json */,
 				B5DDEDA72B71058700241FF6 /* GroupEventMock.json */,
+				B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -410,6 +419,7 @@
 				B5DDEDA62B71054600241FF6 /* ComunityEventMock.json in Resources */,
 				B54BB8882B62E18800391E5C /* UserMock.json in Resources */,
 				B54BB88D2B62E1DF00391E5C /* GroupMock.json in Resources */,
+				B5DDEDB02B7130D100241FF6 /* AlertsEventMock.json in Resources */,
 				B54BB87D2B62E14400391E5C /* Preview Assets.xcassets in Resources */,
 				B55CC2A62B63F30D00AFD077 /* AuthMock.json in Resources */,
 				B54BB87A2B62E14400391E5C /* Assets.xcassets in Resources */,
@@ -425,11 +435,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C17FCB2B6BFD01009843E3 /* ComunityView.swift in Sources */,
+				B5DDEDB42B71359A00241FF6 /* AlertsViewModel.swift in Sources */,
 				B545FC092B695FA500F226D9 /* ConfigManager.swift in Sources */,
 				B54BB8912B62E24900391E5C /* InitView.swift in Sources */,
 				B50EB0CF2B6D2AC1002DA033 /* ImagePicker.swift in Sources */,
 				B599A67C2B6BD3D8000A4E3F /* SendAlertView.swift in Sources */,
 				B545FC022B69416C00F226D9 /* AlertsView.swift in Sources */,
+				B5DDEDAE2B7120EB00241FF6 /* CardAlerts.swift in Sources */,
 				B5DDEDAC2B71113B00241FF6 /* ComunityEventModel.swift in Sources */,
 				B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */,
 				B590E7DB2B6A9C3200F9DC61 /* LoginService.swift in Sources */,

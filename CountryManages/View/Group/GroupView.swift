@@ -4,6 +4,9 @@ import SwiftUI
 struct GroupView: View {
     @EnvironmentObject var groupData: UserDataViewModel
     
+    var alertsSend = AlertsViewModel.shared.alertsSend
+    
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Mi Grupo")
@@ -13,8 +16,8 @@ struct GroupView: View {
             CardGroupView(groups: groupData.groupData)
             
             Divider()
-                
                 .padding()
+            
             Text("Actividad")
                 .font(.system(size: 18))
                 .fontWeight(.bold)
@@ -25,9 +28,23 @@ struct GroupView: View {
                             CardActivity(title: i.title, person: i.person, date: i.date)
                     }
                 }
-            }.padding(.horizontal)
+            }
+            .padding(.horizontal)
             Divider()
                 .padding()
+            
+            Text("Alertas")
+                .font(.system(size: 18))
+                .fontWeight(.bold)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                    VStack{
+                        ForEach(alertsSend, id: \.self) { i  in
+                            CardAlerts(alerts: i )
+                    }
+                }
+            }
+            
             Spacer()
         }.padding(.horizontal)
         .padding(.top)
