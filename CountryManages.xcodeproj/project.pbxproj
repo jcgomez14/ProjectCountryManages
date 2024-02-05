@@ -51,9 +51,21 @@
 		B5DDEDAA2B710BA800241FF6 /* GroupEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */; };
 		B5DDEDAC2B71113B00241FF6 /* ComunityEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */; };
 		B5DDEDAE2B7120EB00241FF6 /* CardAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDAD2B7120EB00241FF6 /* CardAlerts.swift */; };
-		B5DDEDB02B7130D100241FF6 /* AlertsEventMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */; };
 		B5DDEDB42B71359A00241FF6 /* AlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */; };
+		B5DDEDB62B713B2600241FF6 /* ConfirmationReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB52B713B2600241FF6 /* ConfirmationReserveView.swift */; };
+		B5DDEDB92B71420E00241FF6 /* AlertsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB82B71420E00241FF6 /* AlertsGroupView.swift */; };
+		B5DDEDC12B715DE000241FF6 /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5DDEDC22B715DE000241FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54BB86A2B62E13F00391E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54BB8712B62E13F00391E5C;
+			remoteInfo = CountryManages;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B50EB0CE2B6D2AC1002DA033 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -102,12 +114,22 @@
 		B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventModel.swift; sourceTree = "<group>"; };
 		B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityEventModel.swift; sourceTree = "<group>"; };
 		B5DDEDAD2B7120EB00241FF6 /* CardAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAlerts.swift; sourceTree = "<group>"; };
-		B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlertsEventMock.json; sourceTree = "<group>"; };
 		B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewModel.swift; sourceTree = "<group>"; };
+		B5DDEDB52B713B2600241FF6 /* ConfirmationReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReserveView.swift; sourceTree = "<group>"; };
+		B5DDEDB82B71420E00241FF6 /* AlertsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsGroupView.swift; sourceTree = "<group>"; };
+		B5DDEDBE2B715DE000241FF6 /* CountryManagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryManagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B54BB86F2B62E13F00391E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DDEDBB2B715DE000241FF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,6 +144,7 @@
 			children = (
 				B52963DC2B67E612007D15F0 /* ReserveSpaceListView.swift */,
 				B52963E32B67ED39007D15F0 /* ReserveView.swift */,
+				B5DDEDB52B713B2600241FF6 /* ConfirmationReserveView.swift */,
 			);
 			name = ReserveSpace;
 			path = ../ReserveSpace;
@@ -141,6 +164,7 @@
 		B545FC002B69414400F226D9 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				B5DDEDB72B7141F800241FF6 /* AlertsGroup */,
 				B599A67A2B6BD3CA000A4E3F /* SendAlert */,
 				B545FC032B694E4800F226D9 /* Buttons */,
 				B545FC012B69416C00F226D9 /* AlertsView.swift */,
@@ -160,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B54BB8742B62E13F00391E5C /* CountryManages */,
+				B5DDEDBF2B715DE000241FF6 /* CountryManagesTests */,
 				B54BB8732B62E13F00391E5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B54BB8722B62E13F00391E5C /* CountryManages.app */,
+				B5DDEDBE2B715DE000241FF6 /* CountryManagesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,7 +271,6 @@
 				B55CC2A52B63F30D00AFD077 /* AuthMock.json */,
 				B5DDEDA52B71054600241FF6 /* ComunityEventMock.json */,
 				B5DDEDA72B71058700241FF6 /* GroupEventMock.json */,
-				B5DDEDAF2B7130D100241FF6 /* AlertsEventMock.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -358,6 +383,22 @@
 			path = AcceptAuth;
 			sourceTree = "<group>";
 		};
+		B5DDEDB72B7141F800241FF6 /* AlertsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B5DDEDB82B71420E00241FF6 /* AlertsGroupView.swift */,
+			);
+			path = AlertsGroup;
+			sourceTree = "<group>";
+		};
+		B5DDEDBF2B715DE000241FF6 /* CountryManagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */,
+			);
+			path = CountryManagesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,6 +419,24 @@
 			productReference = B54BB8722B62E13F00391E5C /* CountryManages.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B5DDEDBD2B715DE000241FF6 /* CountryManagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5DDEDC42B715DE000241FF6 /* Build configuration list for PBXNativeTarget "CountryManagesTests" */;
+			buildPhases = (
+				B5DDEDBA2B715DE000241FF6 /* Sources */,
+				B5DDEDBB2B715DE000241FF6 /* Frameworks */,
+				B5DDEDBC2B715DE000241FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5DDEDC32B715DE000241FF6 /* PBXTargetDependency */,
+			);
+			name = CountryManagesTests;
+			productName = CountryManagesTests;
+			productReference = B5DDEDBE2B715DE000241FF6 /* CountryManagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,11 +444,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					B54BB8712B62E13F00391E5C = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					B5DDEDBD2B715DE000241FF6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B54BB8712B62E13F00391E5C;
 					};
 				};
 			};
@@ -407,6 +470,7 @@
 			projectRoot = "";
 			targets = (
 				B54BB8712B62E13F00391E5C /* CountryManages */,
+				B5DDEDBD2B715DE000241FF6 /* CountryManagesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,11 +483,17 @@
 				B5DDEDA62B71054600241FF6 /* ComunityEventMock.json in Resources */,
 				B54BB8882B62E18800391E5C /* UserMock.json in Resources */,
 				B54BB88D2B62E1DF00391E5C /* GroupMock.json in Resources */,
-				B5DDEDB02B7130D100241FF6 /* AlertsEventMock.json in Resources */,
 				B54BB87D2B62E14400391E5C /* Preview Assets.xcassets in Resources */,
 				B55CC2A62B63F30D00AFD077 /* AuthMock.json in Resources */,
 				B54BB87A2B62E14400391E5C /* Assets.xcassets in Resources */,
 				B5DDEDA82B71058700241FF6 /* GroupEventMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DDEDBC2B715DE000241FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,13 +539,31 @@
 				B52963DD2B67E612007D15F0 /* ReserveSpaceListView.swift in Sources */,
 				B545FBFF2B6932E900F226D9 /* GroupView.swift in Sources */,
 				B590E7DD2B6AD51800F9DC61 /* CardGroupView.swift in Sources */,
+				B5DDEDB92B71420E00241FF6 /* AlertsGroupView.swift in Sources */,
+				B5DDEDB62B713B2600241FF6 /* ConfirmationReserveView.swift in Sources */,
 				B545FC052B694E5F00F226D9 /* ButtonsAlertsView.swift in Sources */,
 				B54BB8762B62E13F00391E5C /* CountryManagesApp.swift in Sources */,
 				B590E7D72B6A91CA00F9DC61 /* InitLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5DDEDBA2B715DE000241FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DDEDC12B715DE000241FF6 /* LoginServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5DDEDC32B715DE000241FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54BB8712B62E13F00391E5C /* CountryManages */;
+			targetProxy = B5DDEDC22B715DE000241FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B54BB87E2B62E14400391E5C /* Debug */ = {
@@ -662,6 +750,53 @@
 			};
 			name = Release;
 		};
+		B5DDEDC52B715DE000241FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GDT6SSAL3;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = juancruz.CountryManagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryManages.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CountryManages";
+			};
+			name = Debug;
+		};
+		B5DDEDC62B715DE000241FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GDT6SSAL3;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = juancruz.CountryManagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryManages.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CountryManages";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +814,15 @@
 			buildConfigurations = (
 				B54BB8812B62E14400391E5C /* Debug */,
 				B54BB8822B62E14400391E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5DDEDC42B715DE000241FF6 /* Build configuration list for PBXNativeTarget "CountryManagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5DDEDC52B715DE000241FF6 /* Debug */,
+				B5DDEDC62B715DE000241FF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

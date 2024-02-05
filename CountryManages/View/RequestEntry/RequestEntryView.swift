@@ -14,6 +14,12 @@ struct RequestEntryView: View {
          return formatter.string(from: selectedDate)
      }
     
+    var formattedHour: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: selectedTime)
+    }
+    
     @EnvironmentObject var appState: AppState
     @Environment (\.presentationMode) var presentationMode
     var body: some View {
@@ -62,7 +68,7 @@ struct RequestEntryView: View {
                             Text("Horario de ingreso")
                                 .font(.system(size: 14))
                                 .fontWeight(.bold)
-                            DatePicker("" ,selection: $selectedDate, in: ...Date(), displayedComponents: .hourAndMinute)
+                            DatePicker("" ,selection: $selectedTime, in: ...Date(), displayedComponents: .hourAndMinute)
                                 .pickerStyle(.menu)
                                 .frame(width: 200)
                                 .padding()

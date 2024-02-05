@@ -9,6 +9,19 @@ struct ReserveView: View {
     @State private var selectedTime = Date()
     @Environment (\.presentationMode) var presentationMode
     
+    var formattedDate: String {
+         let formatter = DateFormatter()
+         formatter.dateStyle = .medium
+         return formatter.string(from: selectedDate)
+     }
+    
+    var formattedHour: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: selectedTime)
+    }
+    
+    
     var body: some View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
@@ -45,7 +58,7 @@ struct ReserveView: View {
                             Text("Desde")
                                 .font(.system(size: 14))
                                 .fontWeight(.bold)
-                            DatePicker("" ,selection: $selectedDate, in: ...Date(), displayedComponents: .hourAndMinute)
+                            DatePicker("" ,selection: $selectedTime, in: ...Date(), displayedComponents: .hourAndMinute)
                                 .pickerStyle(.menu)
                                 .frame(width: 200)
                                 .padding()
@@ -58,7 +71,7 @@ struct ReserveView: View {
                             Text("Hasta")
                                 .font(.system(size: 14))
                                 .fontWeight(.bold)
-                            DatePicker("" ,selection: $selectedDate, in: ...Date(), displayedComponents: .hourAndMinute)
+                            DatePicker("" ,selection: $selectedTime, in: ...Date(), displayedComponents: .hourAndMinute)
                                 .pickerStyle(.menu)
                                 .frame(width: 200)
                                 .padding()
@@ -78,7 +91,7 @@ struct ReserveView: View {
             .navigationTitle(spaces["title"] ?? "")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
-                NavigationLink(destination: SegundaPantalla()){
+                                    NavigationLink(destination: ConfirmationReserveView(date: formattedDate, person: user.userData?.Nombre ?? "", hour: formattedHour, space: spaces["title"] ?? "")){
                 Text("Reservar")
                     .font(.system(size: 15))
                     .fontWeight(.bold)
