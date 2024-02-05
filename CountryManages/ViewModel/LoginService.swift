@@ -20,10 +20,11 @@ class LoginService: ObservableObject {
             return false
         }
         
-        UserDefaults.standard.set(nombre, forKey: "userNombre")
-        UserDefaults.standard.set(identificacion, forKey: "userIdentificacion")
-        UserDefaults.standard.set(email, forKey: "userEmail")
-        UserDefaults.standard.set(telefono, forKey: "userTelefono")
+        
+        UserDefaultManager.shared.saveData(nombre, forKey: "userNombre")
+        UserDefaultManager.shared.saveData(identificacion, forKey: "userIdentificacion")
+        UserDefaultManager.shared.saveData(email, forKey: "userEmail")
+        UserDefaultManager.shared.saveData(telefono, forKey: "userTelefono")
         
         print("Create Account Success")
         

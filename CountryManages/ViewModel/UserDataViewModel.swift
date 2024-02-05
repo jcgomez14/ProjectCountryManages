@@ -61,11 +61,11 @@ class UserDataViewModel: ObservableObject {
     
     // Fetch Data whit UserDefaults
     func fetchDataUserDefaults()  {
-        
-        guard let nombre =  UserDefaults.standard.string(forKey: "userNombre") else { return }
-        guard let dni =  UserDefaults.standard.string(forKey: "userIdentificacion") else { return }
-        guard let email =  UserDefaults.standard.string(forKey: "userEmail") else { return }
-        guard let telefono =  UserDefaults.standard.string(forKey: "userEmail") else { return }
+
+        guard let nombre = UserDefaultManager.shared.retrieveData(forKey: "userNombre") else { return }
+        guard let dni = UserDefaultManager.shared.retrieveData(forKey: "userIdentificacion") else { return }
+        guard let email =  UserDefaultManager.shared.retrieveData(forKey: "userEmail") else { return }
+        guard let telefono =  UserDefaultManager.shared.retrieveData(forKey: "userEmail") else { return }
         
         userData =  UserDefautlModel.init(Nombre: nombre, Apellido: "", DNI: dni, Email: email, Telefono: telefono, Codigo: "C14", Admin: true)
     }

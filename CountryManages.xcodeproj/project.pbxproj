@@ -55,6 +55,8 @@
 		B5DDEDB62B713B2600241FF6 /* ConfirmationReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB52B713B2600241FF6 /* ConfirmationReserveView.swift */; };
 		B5DDEDB92B71420E00241FF6 /* AlertsGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDB82B71420E00241FF6 /* AlertsGroupView.swift */; };
 		B5DDEDC12B715DE000241FF6 /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */; };
+		B5DDEDC92B71657B00241FF6 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDC82B71657B00241FF6 /* UserDefaultManager.swift */; };
+		B5DDEDCB2B71668800241FF6 /* UserDefaultManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDCA2B71668800241FF6 /* UserDefaultManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		B5DDEDB82B71420E00241FF6 /* AlertsGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsGroupView.swift; sourceTree = "<group>"; };
 		B5DDEDBE2B715DE000241FF6 /* CountryManagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryManagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTest.swift; sourceTree = "<group>"; };
+		B5DDEDC82B71657B00241FF6 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		B5DDEDCA2B71668800241FF6 /* UserDefaultManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,7 @@
 				B5DDEDB32B71359A00241FF6 /* AlertsViewModel.swift */,
 				B590E7DA2B6A9C3200F9DC61 /* LoginService.swift */,
 				B5C17FC72B6BEEE8009843E3 /* LocationUser.swift */,
+				B5DDEDC82B71657B00241FF6 /* UserDefaultManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DDEDC02B715DE000241FF6 /* LoginServiceTest.swift */,
+				B5DDEDCA2B71668800241FF6 /* UserDefaultManagerTest.swift */,
 			);
 			path = CountryManagesTests;
 			sourceTree = "<group>";
@@ -521,6 +527,7 @@
 				B52963E42B67ED39007D15F0 /* ReserveView.swift in Sources */,
 				B5DDEDAA2B710BA800241FF6 /* GroupEventModel.swift in Sources */,
 				B5C17FC82B6BEEE8009843E3 /* LocationUser.swift in Sources */,
+				B5DDEDC92B71657B00241FF6 /* UserDefaultManager.swift in Sources */,
 				B54BB8782B62E13F00391E5C /* ContentView.swift in Sources */,
 				B55CC2A42B63E84500AFD077 /* AppState.swift in Sources */,
 				B590E7D92B6A949000F9DC61 /* LoginView.swift in Sources */,
@@ -551,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DDEDCB2B71668800241FF6 /* UserDefaultManagerTest.swift in Sources */,
 				B5DDEDC12B715DE000241FF6 /* LoginServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
