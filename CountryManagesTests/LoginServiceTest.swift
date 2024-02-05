@@ -13,9 +13,9 @@ final class LoginServiceTest: XCTestCase {
     func testCreateAccount() {
         let nombre: String = "Juan Cruz"
         let apellido: String = "Gomez"
-        let identificacion: String = "38563077"
-        let email: String = "jcgomez0014@gmail.com"
-        let telefono: String = "2325413946"
+        let identificacion: String = "1234"
+        let email: String = "juan@example.com"
+        let telefono: String = "123456789"
 
         
         let createAccount =  UserDefautlModel(Nombre: nombre, Apellido: apellido, DNI: identificacion, Email: email, Telefono: telefono, Codigo: "C14", Admin: true)
@@ -25,4 +25,18 @@ final class LoginServiceTest: XCTestCase {
         XCTAssertEqual(createAccount.DNI, identificacion)
         XCTAssertEqual(createAccount.Email, email)
     }
+    
+    func testLoginService() {
+        let viewModel = LoginService()
+        
+        let result = viewModel.createAccount(nombre: "Juan Cruz", identificacion: "123456", email: "juan@example.com", telefono: "123456789", password: "password", repeatPassword: "password")
+        
+        XCTAssertTrue(result, "Cuenta creada correctamente")
+        XCTAssertTrue(viewModel.isAccountLogin, "La cuenta se encuentra logeada")
+        
+        let logOut = viewModel.logoutAccount()
+        
+        XCTAssertFalse(viewModel.isAccountLogin, "La cuenta se encuentra deslogueada" )
+        
+    }  
 }

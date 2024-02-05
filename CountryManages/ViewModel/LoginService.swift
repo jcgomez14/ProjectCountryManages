@@ -38,14 +38,17 @@ class LoginService: ObservableObject {
     func loginAccount(identificacion: String, password: String) -> Bool {
         
         guard let keyPassword = retrievePasswordFromKeychain() else  { return false }
-        guard let ident = UserDefaults.standard.string(forKey: "userIdentificacion") else { return false }
+        guard let ident = UserDefaultManager.shared.retrieveData(forKey: "userIdentificacion") else { return false }
         
         if keyPassword == password && ident == identificacion {
             print("Password and Identificacion Valid")
             
             UserDefaults.standard.set(true, forKey: "userLogin")
             return true
+        } else {
+            print("Password ord Identificacion invalid")
         }
+
         
         return false
     }
@@ -93,7 +96,6 @@ class LoginService: ObservableObject {
         if status == errSecSuccess, let retrievedData = dataTypeRef as? Data {
             let password = String(data: retrievedData, encoding: .utf8)
             print("Contraseña recuperada exitosamente del Keychain.")
-            print("Password")
             return password
         } else {
             print("Error al recuperar la contraseña del Keychain. Código de error: \(status)")
