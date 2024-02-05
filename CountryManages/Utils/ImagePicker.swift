@@ -8,7 +8,7 @@ import UniformTypeIdentifiers
 
 struct ImagePickerView: UIViewControllerRepresentable {
     @Binding var imagenSeleccionada: UIImage?
-
+    @Binding var showGalery: Bool
     @Environment(\.dismiss) var dismiss
     
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -22,13 +22,12 @@ struct ImagePickerView: UIViewControllerRepresentable {
             if let imagen = info[.originalImage] as? UIImage {
                 parent.imagenSeleccionada = imagen
             }
-
-            parent.dismiss()
+            parent.showGalery = false
             
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            parent.dismiss()
+            parent.showGalery = false
           
         }
     }
@@ -53,7 +52,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
 struct CameraPickerView: UIViewControllerRepresentable {
     @Binding var mediaType: String?
     @Binding var mediaData: Data?
-    
+    @Binding var showCamera: Bool
     @Environment(\.dismiss) var dismiss
 
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -82,11 +81,11 @@ struct CameraPickerView: UIViewControllerRepresentable {
                 }
             }
 
-            parent.dismiss()
+            parent.showCamera = false
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            parent.dismiss()
+            parent.showCamera = false
         }
     }
 

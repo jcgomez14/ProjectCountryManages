@@ -104,6 +104,7 @@ struct SendAlertView: View {
                                 
                                 Button(action: {
                                     showGalery = true
+                                  
                                 }, label: {
                                     VStack {
                                         Image(systemName: "photo")
@@ -139,6 +140,7 @@ struct SendAlertView: View {
                                 })
                                 Button(action: {
                                     showCamera = true
+                                   
                                 }, label: {
                                     VStack {
                                         Image(systemName: "camera")
@@ -217,14 +219,22 @@ struct SendAlertView: View {
                 .toolbar(hiddenTab ? .hidden : .visible, for: .tabBar)
             
         }.sheet(isPresented: $showGalery) {
-            ImagePickerView(imagenSeleccionada: $imagenSeleccionada)
-                .toolbar(showGalery ? .visible : .hidden , for: .tabBar)
-        }.toolbar(.visible, for: .tabBar)
-        .sheet(isPresented: $showCamera) {
-            CameraPickerView(mediaType: $mediaType, mediaData: $mediaData)
-             
-        }.toolbar(showCamera ? .visible : .hidden, for: .tabBar)
+            NavigationView {
+            ImagePickerView(imagenSeleccionada: $imagenSeleccionada, showGalery: $showGalery)
+                    .toolbar(.visible)
+                    .navigationBarHidden(true)
+           }
+            
+        }
         
+        
+        .sheet(isPresented: $showCamera) {
+            NavigationView {
+            CameraPickerView(mediaType: $mediaType, mediaData: $mediaData, showCamera: $showCamera)
+                    .toolbar(.visible)
+                    .navigationBarHidden(true)
+            }
+        }
         
     }
 }
