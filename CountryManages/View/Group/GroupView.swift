@@ -21,8 +21,8 @@ struct GroupView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                     HStack{
-                    ForEach(0..<10) { i  in
-                        CardActivity()
+                        ForEach(groupData.groupEvent, id: \.self) { i  in
+                            CardActivity(title: i.title, person: i.person, date: i.date)
                     }
                 }
             }.padding(.horizontal)
@@ -33,6 +33,7 @@ struct GroupView: View {
         .padding(.top)
         .onAppear() {
             groupData.fetchUserGroup()
+            groupData.fetchEventGroup()
         }
     }
 }

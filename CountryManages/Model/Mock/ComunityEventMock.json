@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Objeto perdido",
+        "description": "Se me perdio mi billetera cerca de la pileta",
+        "person": "Federico Lopez",
+        "date": "2/2/2024",
+        "status": "Abierto",
+    },
+    {
+        "title": "Objeto perdido",
+        "description": "Encontre las llaves de una casa en el ingreso, las deje en la garita de seguridad",
+        "person": "Pablo Ramos",
+        "date": "31/1/2024",
+        "status": "Cerrado",
+    },
+    {
+        "title": "Mascota perdida",
+        "description": "Anda un golden suelto cerca de la rotonda",
+        "person": "Flavia Garcia",
+        "date": "30/1/2024",
+        "status": "Abierto",
+    },
+    {
+        "title": "Otros",
+        "description": "El wifi del coworking no funciona correctamente",
+        "person": "Julian Rodriguez",
+        "date": "18/1/2024",
+        "status": "Cerrado",
+    },
+    {
+        "title": "Objeto perdido",
+        "description": "Se olvidaron un cargador en el salon",
+        "person": "Martin Rodriguez",
+        "date": "2/1/2024",
+        "status": "Abierto",
+    },
+    {
+        "title": "Mascota perdida",
+        "description": "Se me escapo mi perra Ana, es una dalmata, tiene collar rojo",
+        "person": "Diego Martinez",
+        "date": "8/12/2023",
+        "status": "Cerrado",
+    },
+]

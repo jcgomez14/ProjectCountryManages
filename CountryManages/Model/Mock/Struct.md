@@ -55,6 +55,4 @@ Objetos perdidos.
 Mascota perdidos.
 Otros.
 
-D1: Generar QR - ViewModel User - List Reservas
-D2: Buttons Alertas
 

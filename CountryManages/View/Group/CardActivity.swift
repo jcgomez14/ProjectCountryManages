@@ -1,22 +1,26 @@
-
 import SwiftUI
 
 struct CardActivity: View {
+    
+    var title: String
+    var person: String
+    var date: String
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 HStack {
                     Image(systemName: "bell")
-                    Text("Solicitud de ingreso")
+                    Text(title)
                         .fontWeight(.bold)
                 }
                 HStack {
                     Image(systemName: "person")
-                    Text("Juan Cruz Gomez")
+                    Text(person)
                 }
                 HStack {
                     Image(systemName: "calendar")
-                    Text("1/12/2023")
+                    Text(date)
                 }
             }
             Image(systemName: "plus.circle")
@@ -27,5 +31,5 @@ struct CardActivity: View {
 }
 
 #Preview {
-    CardActivity()
+    CardActivity(title: "Solicitud de Ingreso", person: "Juan Cruz Gomez", date: "1/12/2023")
 }

@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct ComunityView: View {
-    
+    @EnvironmentObject var comunityData: UserDataViewModel
     var alertsComunity = ConfigManager.shared.alertsComunity
     
     var body: some View {
@@ -27,17 +27,21 @@ struct ComunityView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack{
-                    ForEach(0..<10) { i  in
-                        CardActivity()
+                    ForEach(comunityData.comunityEvent, id: \.self) { i  in
+                        CardActivity(title: i.title, person: i.person, date: i.date)
                     }
                 }
             }
             
         }.padding()
         Spacer()
+            .onAppear() {
+                comunityData.fetchEventComunity()
+            }
     }
 }
 
 #Preview {
     ComunityView()
+        .environmentObject(UserDataViewModel())
 }

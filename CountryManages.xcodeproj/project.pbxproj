@@ -46,6 +46,10 @@
 		B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */; };
 		B5D404F82B6410A7007EBD9E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404F72B6410A7007EBD9E /* AuthModel.swift */; };
 		B5D404FB2B643551007EBD9E /* AcceptAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D404FA2B643551007EBD9E /* AcceptAuthView.swift */; };
+		B5DDEDA62B71054600241FF6 /* ComunityEventMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DDEDA52B71054600241FF6 /* ComunityEventMock.json */; };
+		B5DDEDA82B71058700241FF6 /* GroupEventMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DDEDA72B71058700241FF6 /* GroupEventMock.json */; };
+		B5DDEDAA2B710BA800241FF6 /* GroupEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */; };
+		B5DDEDAC2B71113B00241FF6 /* ComunityEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,10 @@
 		B5D404F52B64108C007EBD9E /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
 		B5D404F72B6410A7007EBD9E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		B5D404FA2B643551007EBD9E /* AcceptAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptAuthView.swift; sourceTree = "<group>"; };
+		B5DDEDA52B71054600241FF6 /* ComunityEventMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ComunityEventMock.json; sourceTree = "<group>"; };
+		B5DDEDA72B71058700241FF6 /* GroupEventMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GroupEventMock.json; sourceTree = "<group>"; };
+		B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventModel.swift; sourceTree = "<group>"; };
+		B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunityEventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,8 @@
 				B545FBFB2B692E8B00F226D9 /* GroupModel.swift */,
 				B55E554D2B67D41100B751D3 /* UserModel.swift */,
 				B545FC062B695CC500F226D9 /* AlertsModel.swift */,
+				B5DDEDA92B710BA800241FF6 /* GroupEventModel.swift */,
+				B5DDEDAB2B71113B00241FF6 /* ComunityEventModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +235,8 @@
 				B54BB88C2B62E1DF00391E5C /* GroupMock.json */,
 				B54BB88B2B62E1C300391E5C /* Struct.md */,
 				B55CC2A52B63F30D00AFD077 /* AuthMock.json */,
+				B5DDEDA52B71054600241FF6 /* ComunityEventMock.json */,
+				B5DDEDA72B71058700241FF6 /* GroupEventMock.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -395,11 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DDEDA62B71054600241FF6 /* ComunityEventMock.json in Resources */,
 				B54BB8882B62E18800391E5C /* UserMock.json in Resources */,
 				B54BB88D2B62E1DF00391E5C /* GroupMock.json in Resources */,
 				B54BB87D2B62E14400391E5C /* Preview Assets.xcassets in Resources */,
 				B55CC2A62B63F30D00AFD077 /* AuthMock.json in Resources */,
 				B54BB87A2B62E14400391E5C /* Assets.xcassets in Resources */,
+				B5DDEDA82B71058700241FF6 /* GroupEventMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,12 +430,14 @@
 				B50EB0CF2B6D2AC1002DA033 /* ImagePicker.swift in Sources */,
 				B599A67C2B6BD3D8000A4E3F /* SendAlertView.swift in Sources */,
 				B545FC022B69416C00F226D9 /* AlertsView.swift in Sources */,
+				B5DDEDAC2B71113B00241FF6 /* ComunityEventModel.swift in Sources */,
 				B5D404F62B64108C007EBD9E /* UserDataViewModel.swift in Sources */,
 				B590E7DB2B6A9C3200F9DC61 /* LoginService.swift in Sources */,
 				B54BB8952B62E38600391E5C /* Color.swift in Sources */,
 				B545FC072B695CC500F226D9 /* AlertsModel.swift in Sources */,
 				B590E7D52B6A7E4400F9DC61 /* RegisterView.swift in Sources */,
 				B52963E42B67ED39007D15F0 /* ReserveView.swift in Sources */,
+				B5DDEDAA2B710BA800241FF6 /* GroupEventModel.swift in Sources */,
 				B5C17FC82B6BEEE8009843E3 /* LocationUser.swift in Sources */,
 				B54BB8782B62E13F00391E5C /* ContentView.swift in Sources */,
 				B55CC2A42B63E84500AFD077 /* AppState.swift in Sources */,
